@@ -54,7 +54,7 @@ while True :
         temperature = DHT11_SENSOR.temperature()
         humidity = DHT11_SENSOR.humidity()
         
-        lumination = LDR_SENSOR.read()
+        lumination = LDR_SENSOR.read()			
         
         send_data(client, temperature, VARIABLE_LABEL[0])
         send_data(client, humidity, VARIABLE_LABEL[1])
